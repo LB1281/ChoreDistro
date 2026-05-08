@@ -1,0 +1,3 @@
+ChoreDistro achieves equal distribution of chores in a family by employing Machine Learning for unbiased chore assignment among all family members, preventing a single member from taking on most of the household workload. It also implements a gamified approach through a point-accrual incentive system to provide a healthy competitive spirit that motivates the family, all while integrating with an IoT-sensor inclusive smart home.
+
+The Machine Learning model utilizes Logistic Regression to correctly predict the member that should do the chore based on their cumulative points. The assigned chores are then displayed on the web-dashboard which was developed with a combination of HTML, CSS, and JavaScript.
