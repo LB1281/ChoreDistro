@@ -1,0 +1,76 @@
+<html>
+    <style>
+        table, th, td{
+            border: 2px solid black; 
+            padding: 10px;
+            text-align: center;
+            font-size: 120%;
+        }
+    </style>
+    <head>
+        <title>The choreDistro</title>
+    </head>
+    <body style="background-color: #523D34; color: white;">
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="addChore.html" 
+                style="background-color: black; 
+                        color: white; 
+                        padding: 15px 30px; 
+                        text-decoration: none; 
+                        border-radius: 50px; 
+                        display: inline-block; 
+                        font-family: serif; 
+                        font-weight: bold;
+                        font-size: 1.3rem;">
+                + ADD CHORE
+            </a>
+
+            <button id="deleteCheckedBtn" 
+                    style="background-color: black; 
+                        color: white; 
+                        padding: 15px 30px; 
+                        border-radius: 50px; 
+                        display: inline-block; 
+                        font-family: serif; 
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        cursor: pointer;">
+                CLEAR COMPLETED
+            </button>
+
+            <button id="clearBtn" 
+                    style="background-color: black; 
+                        color: white; 
+                        padding: 15px 30px; 
+                        text-decoration: none; 
+                        border-radius: 50px; 
+                        display: inline-block; 
+                        font-family: serif; 
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        cursor: pointer;">
+                EMPTY LIST
+            </button>
+        </div>
+        <h1 style="text-align: center;">Chore List</h1>
+        <div style=" margin-top: 20px;">
+            <table  id="choreTable"
+                    style="margin: 0 auto; 
+                    border-collapse: collapse; 
+                    width: 50%; 
+                    color: white; 
+                    border: 2px solid black;">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;"></th>
+                        <th>Chore</th>
+                        <th>Points</th>
+                        <th>Assigned</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+        <script src="website.js"></script>
+    </body>
+</html>

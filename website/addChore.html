@@ -1,0 +1,77 @@
+<html>
+    <body style="background-color: #523D34; color: white;">
+        <h1 style="text-align: center; padding-top: 30px;">Add a New Chore</h1>
+        <div style="width: 30%; margin: 30px auto;">
+            <label for="choreInput" 
+                style="font-size: 1.3rem;
+                        font-weight: bold;
+                        display: block;
+                        padding-left: 10px;
+                        padding-top: 30px;">
+                Chore name:</label><br>
+            <input type="text" id="choreInput" placeholder="Ex: Wash dishes, Sweep the floor"
+                    style="background-color: #33302F; 
+                            color: white; 
+                            padding: 15px 30px; 
+                            text-decoration: none; 
+                            border-radius: 30px; 
+                            display: inline-block; 
+                            font-family: serif;
+                            font-size: 1.2rem;
+                            width: 100%;">
+
+            <label style="font-size: 1.3rem;
+                            font-weight: bold;
+                            display: block;
+                            padding-left: 10px;
+                            padding-top: 30px;">
+                Points: <span id="pointsValue" style="font-size: 1.8rem; color: #97d6ff;" >50</span>
+            </label>
+            <input type="range" id="pointsInput" min="10" max="100" step="10" value="50" 
+                   style="width: 100%; accent-color: #97d6ff; cursor: pointer;"
+                   oninput="document.getElementById('pointsValue').innerText = this.value">
+
+            <label style="font-size: 1.3rem;
+                            font-weight: bold;
+                            display: block;
+                            padding-left: 10px;
+                            padding-top: 30px;
+                            padding-bottom: 20px;">
+                Chore frequency:</label>
+            <select id="personInput"
+                    style="background-color: #33302F; 
+                            color: white; 
+                            padding: 15px 30px; 
+                            text-decoration: none; 
+                            border-radius: 30px; 
+                            display: inline-block; 
+                            font-family: serif;
+                            font-size: 1.2rem;
+                            width: 100%;">
+                <option value="" disabled selected>How often does the chore occur?</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Bi-Weekly">Bi-Weekly</option>
+                <option value="Tri-Weekly">Tri-Weekly</option>
+                <option value="Monthly">Monthly</option>
+            </select><br><br>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button id="saveBtn" 
+                    style="background-color: black; 
+                            color: white; 
+                            padding: 15px 30px; 
+                            border: none; 
+                            border-radius: 50px; 
+                            display: inline-block; 
+                            font-family: serif; 
+                            font-weight: bold;
+                            font-size: 1.3rem;
+                            cursor: pointer;">
+                    SAVE CHORE
+                </button>
+            </div>
+
+        <script src="website.js"></script>
+    </body>
+</html>
